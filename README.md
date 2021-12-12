@@ -1,5 +1,3 @@
-## Theme Component to colour text
+## Theme Component to colour text in Posts
 
-An alternative to BBCode plugin.
-
-... but not as good!  Only use if you can't install a plugin, or prefer not to.
+A lighter weight alternative to the BBCode plugin.

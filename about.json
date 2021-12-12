@@ -1,7 +1,7 @@
 {
   "name": "Coloured Text",
   "about_url": "https://github.com/merefield/discourse-tc-coloured-text",
-  "authors": ["Robert Barrow"],
+  "authors": ["merefield", "johani"],
   "component": true,
   "license": "MIT",
   "about": "adds coloured text to Discourse posts",
