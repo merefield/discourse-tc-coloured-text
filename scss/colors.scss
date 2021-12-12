@@ -1,0 +1,74 @@
+div.d-wrap[data-wrap="colorme"], span.d-wrap[data-wrap="colorme"] {
+  &[data-color="black"] {
+    color: black;
+  }
+
+  &[data-color="blue"] {
+    color: blue;
+  } 
+
+  &[data-color="green"] {
+    color: green;
+  }
+  
+  &[data-color="cyan"] {
+    color: cyan;
+  }
+
+  &[data-color="red"] {
+    color: red;
+  }
+
+  &[data-color="magenta "] {
+    color: magenta ;
+  }
+
+  &[data-color="yellow"] {
+    color: yellow;
+  }
+
+  &[data-color="white"] {
+    color: white;
+  }
+
+  &[data-color="orange"] {
+    color: orange;
+  }
+
+  &[data-back="black"] {
+    background-color: black;
+  }
+
+  &[data-back="blue"] {
+    background-color: blue;
+  } 
+
+  &[data-back="green"] {
+    background-color: green;
+  }
+  
+  &[data-back="cyan"] {
+    background-color: cyan;
+  }
+
+  &[data-back="red"] {
+    background-color: red;
+  }
+
+  &[data-back="magenta "] {
+    background-color: magenta ;
+  }
+
+
+  &[data-back="yellow"] {
+    background-color: yellow;
+  }
+
+  &[data-back="white"] {
+    background-color: white;
+  }
+
+  &[data-back="orange"] {
+    background-color: orange;
+  }
+}
