@@ -18,26 +18,10 @@ export default {
           group: "extras",
           icon: "palette",
           title: themePrefix('composer.color_ui_button_title'),
-          perform: e => e.applySurround('[wrap=color color=# bgcolor=#]', '[/wrap]', 'color_ui_default_text')
+          perform: e => e.applySurround('[color=red]', '[/color]', 'my_text_in_red')
         });
       });
 
-      api.decorateCookedElement(
-        post => {
-          post
-            .querySelectorAll("[data-color]")
-            .forEach(i =>
-              i.style.setProperty("--color", getVariable(i.dataset.color))
-            );
-
-          post
-            .querySelectorAll("[data-bgcolor]")
-            .forEach(i =>
-              i.style.setProperty("--bgcolor", getVariable(i.dataset.bgcolor))
-            );
-        },
-        { id: "wrap-colors" }
-      );
     })
   }
 }
