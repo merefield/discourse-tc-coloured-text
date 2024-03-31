@@ -1,9 +1,9 @@
 {
-  "name": "Coloured Text",
-  "about_url": "https://github.com/merefield/discourse-tc-coloured-text",
-  "authors": ["merefield", "johani"],
+  "name": "KM Coloured Text",
+  "about_url": "https://github.com/kickmaker/discourse-tc-coloured-text",
+  "authors": ["km", "merefield", "johani"],
   "component": true,
   "license": "MIT",
-  "about": "adds coloured text to Discourse posts",
+  "about": "adds coloured text to KM Discourse posts",
   "version": 0.1
 }
