@@ -7,18 +7,13 @@ export default {
       const hasAlpha = /(.,){3}|\//;
       const MAX_LENGTH = 25;
 
-      const getVariable = value => {
-        const color = value.replace(/\s/g, "");
-        return hasAlpha.test(color) || color.length > MAX_LENGTH ? "" : color;
-      };
-
       api.onToolbarCreate(toolbar => {
         toolbar.addButton({
-          id: "color_ui_button",
+          id: "video_how_button",
           group: "extras",
-          icon: "palette",
-          title: themePrefix('composer.color_ui_button_title'),
-          perform: e => e.applySurround('[color=red]', '[/color]', 'my_text_in_red')
+          icon: "video",
+          title: themePrefix('composer.video_howto_button_title'),
+          perform: window.open("google.com", "_blank", strWindowFeatures);
         });
       });
 
