@@ -1,4 +1,5 @@
 import {withPluginApi} from 'discourse/lib/plugin-api';
+import I18n from "I18n";
 
 export default {
   name: 'bbcode-init',
@@ -12,13 +13,17 @@ export default {
         return hasAlpha.test(color) || color.length > MAX_LENGTH ? "" : color;
       };
 
+      const currentLocale = I18n.currentLocale();
+
+      I18n.translations[currentLocale].js.composer.placeholder_coloured_text = settings.default_text;
+
       api.onToolbarCreate(toolbar => {
         toolbar.addButton({
           id: "color_ui_button",
           group: "extras",
           icon: "palette",
           title: themePrefix('composer.color_ui_button_title'),
-          perform: e => e.applySurround('[wrap=color color=# bgcolor=#]', '[/wrap]', 'color_ui_default_text')
+          perform: e => e.applySurround(`[wrap=color color=${settings.default_foreground_colour} bgcolor=${settings.default_background_colour}]`, '[/wrap]', 'placeholder_coloured_text')
         });
       });
 

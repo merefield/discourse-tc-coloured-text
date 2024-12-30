@@ -1,3 +1,5 @@
 en:
   composer:
     color_ui_button_title: Color the text
+  js:
+    color_ui_button_substitute: substitute this text

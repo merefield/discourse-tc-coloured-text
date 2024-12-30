@@ -2,3 +2,10 @@ svg_icons:
   default: 'palette'
   type: 'list'
   list_type: 'compact'
+default_text:
+  default: '<--substitute this text-->'
+default_background_colour:
+  default: black
+default_foreground_colour:
+  default: white
+
